@@ -18,6 +18,12 @@ pipeline {
             }
         }
 
+        stage('Install System Dependencies') {
+            steps {
+                sh 'apt-get update && apt-get install -y libatomic1'
+            }
+        }
+
         stage('Install Node Dependencies') {
             steps {
                 sh 'npm install'

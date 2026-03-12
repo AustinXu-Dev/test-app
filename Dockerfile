@@ -1,8 +1,6 @@
 # Use an official alpine nodeJS image as the base image
 FROM node:alpine
 
-RUN apk add --no-cache libatomic
-
 # Set working directory in the container
 WORKDIR /app
 
