@@ -14,7 +14,7 @@ pipeline {
 
         stage('Checkout Github') {
             steps {
-                git credentialsId: 'jen-doc-git', url: 'https://github.com/HtetAungShine6/node-test-app.git'
+                git credentialsId: 'github-cred', url: 'https://github.com/AustinXu-Dev/test-app.git'
             }
         }
 
